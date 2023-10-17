@@ -1,0 +1,223 @@
+#top {  
+    height: 35vh;
+    background-color: rgb(245, 245, 245);
+}
+
+.background {
+    background-color: rgb(160, 160, 160);
+    padding: 10%;
+}
+
+.background h1 {
+    font-weight: 100;
+    font-size: 300%;
+}
+
+.background p {
+    font-size: 1.25em;
+    text-align: justify;
+}
+
+.motto {
+    text-align: center;
+    font-size: 800%;
+    padding: 5%;
+}
+
+.goals {
+    background-color: rgb(160, 160, 160);
+    padding: 3%;
+}
+
+.goals h3 {
+    margin-left: 2%;
+    font-size: 300%;
+}
+
+.goals p {
+    margin-top: 1%;
+    margin-left: 10%;
+    font-size: 150%;
+}
+
+.statistics {
+    margin-top: 10%;
+    background-color: rgb(160, 160, 160);
+    text-align: center;
+    padding: 5%;
+}
+
+.statistics #one {
+margin: 3%;
+font-size: 400%;
+}
+.statistics #two {
+margin: 3%;
+font-size: 300%;
+}
+
+.statistics #three {
+margin: 3%;
+font-size: 200%;
+}
+
+@media screen and (max-width: 1440px) {
+    .contain {
+        top: 50%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #top {
+        height: 30vh;
+    }
+    
+    header nav ul li a {
+        font-size: 0.8em;
+    }
+
+    header nav ul li {
+        padding: 0px;
+    }
+
+    .nav-wrapper {
+        bottom: 10px;
+    }
+
+    .nav-wrapper a  {
+        width: 0.6rem;
+        height: 0.6rem;
+    }
+
+    footer .sponsors .other-companies div {
+        width: 5%;
+        height: 50%;
+        margin: 2%;
+    }
+
+    footer .sponsors .company-img img {
+        height: 20px;
+        width: 20px;
+        float: calc(center);
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    footer .sponsors .social-links div {
+        margin: 2px;
+    }
+
+    footer .sponsors .social-links {
+        float: right;
+    }
+
+    footer .sponsors .social-links div img {
+        height: 18px;
+        width: 18px;
+    }
+
+    footer .bottom {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and  (max-width: 320px), (max-width: 375px), (max-width: 425px) {
+    #top {
+        height: 20vh;
+    }
+
+    header nav ul li a {
+        font-size: 0.5em;
+    }
+
+    header nav ul li {
+        padding: 0px;
+    }
+
+    .nav-wrapper {
+        bottom: 10px;
+    }
+
+    .nav-wrapper a  {
+        width: 2rem;
+        height: 0.7rem;
+    }
+
+    .background {
+        padding: 3%;
+    }
+
+    .background h1 {
+        font-weight: 100;
+        text-align: center;
+        font-size: 3em;
+    }
+
+    .background p {
+        font-size: 0.75em;
+    }
+
+    .motto {
+        text-align: center;
+        font-size: 300%;
+        padding: 5%;
+    }
+
+    .goals h3 {
+        margin-left: 2%;
+        font-size: 150%;
+    }
+
+    .goals p {
+        margin-top: 3%;
+        margin-left: 10%;
+        font-size: 75%;
+    }
+
+    .statistics #one {
+        margin: 3%;
+        font-size: 200%;
+    }
+
+    .statistics #two {
+        margin: 3%;
+        font-size: 150%;
+    }
+
+    .statistics #three {
+        margin: 3%;
+        font-size: 100%;
+    }
+
+    footer .sponsors .other-companies div {
+        width: 5%;
+        height: 50%;
+        margin: 2%;
+    }
+
+    footer .sponsors .company-img img {
+        height: 20px;
+        width: 20px;
+        float: calc(center);
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    footer .sponsors .social-links div {
+        margin: 2px;
+    }
+
+    footer .sponsors .social-links {
+        float: right;
+    }
+
+    footer .sponsors .social-links div img {
+        height: 18px;
+        width: 18px;
+    }
+
+    footer .bottom {
+        font-size: 0.7em;
+    }
+}

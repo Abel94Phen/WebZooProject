@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family:sans-serif;
+}
+
+#top {
+
+    position: relative;
+}
+
+#top .contain {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    z-index: 1;
+    bottom: 50%;
+    left: 10%;
+    opacity: 0.85;
+}
+
+#top .container {
+    top: -200px;
+}
+
+.company-logo {
+    width: 10%;   
+}
+
+.company-logo img {
+    border-radius: 50%;
+}
+
+nav ul li {
+    display: inline-block;
+    order: 0;
+    margin-left: 0px;
+    padding: 10px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.em;
+}
+
+nav ul li:hover {
+    background-color: black;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+nav {
+    border: 1px solid;
+    margin-left: 3%; 
+    background-color: rgb(200, 200, 200);  
+}
+
+footer .sponsors {
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    background-color: rgb(200, 200, 200);
+}
+
+
+footer .sponsors .other-companies {
+    display: flex;
+    background-color: rgb(230, 230, 230);
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .sponsors .other-companies div{
+    background-color: black;
+    width: 5%;
+    height: 50%;
+}
+
+footer .sponsors .company-img img {
+    height: 50px;
+    width: 50px;    
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+footer .sponsors .social-links img {
+    height: 110%;
+    width: 110%;
+}
+footer .sponsors .social-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .sponsors .social-links div {
+    margin-right: 50px;
+}
+
+footer .sponsors .company-img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+}
+
+footer .bottom {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer .bottom p {
+    display: inline;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 150%;
+}

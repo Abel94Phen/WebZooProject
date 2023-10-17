@@ -1,0 +1,298 @@
+#top{
+    height: 35vh;
+    background-color: rgb(245, 245, 245);
+}
+
+#donation-type-error,
+#donation-amount-error,
+#donation-purpose-error,
+#email_error {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 110%;
+    color: rgb(170, 0, 0);
+}
+
+section {
+    background-color: rgb(174, 176, 177);
+    padding-left: 22%;
+    padding-right: 22%;
+    text-align: justify;
+}
+
+section h1 {
+    font-size: 400%;
+    font-weight: lighter;
+    text-align: center;
+}
+
+section p {
+    font-size: 130%;
+}
+
+section form {
+    background-color: rgb(117, 117, 117);
+    padding: 5%;
+}
+
+section form h2 {
+    border-bottom: 2px solid;
+    font-size: 200%;
+    margin: 1% auto;
+}
+
+section form h3 {
+    margin: 1% auto;
+    font-size: 150%;
+    font-weight: lighter;
+}
+
+section form .donation-type div {
+    background-color: white;
+    font-size: larger;
+}
+
+section form .donation-type div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    font-size: 2em; 
+}
+
+section form .donation-type div label input{
+    display: none;
+}
+
+section form .donation-type div span {
+    display: inline-block;
+    text-transform: uppercase;
+    width: 100%;
+    background-color: #9c9797;
+    color: black;
+}
+
+section form .donation-type div label input:checked + span {
+    background-color: black;
+    color: white;
+}
+
+section form .donation-amount {
+    margin-top: 2%;
+    height: 80%;
+}
+
+section form .donation-amount div {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+    row-gap: 45%;
+    column-gap: 3%;
+    text-align: center;
+    font-size: 2em;
+}
+
+section form .donation-amount div label input {
+    display: none;
+}
+
+section form .donation-amount div span {
+    display: inline-block;
+    text-transform: uppercase;
+    width: 100%;
+    background-color: #9c9797;
+    color: black;
+}
+
+section form .donation-amount div label input:checked + span {
+    background-color: black;
+    color: white;
+}
+
+section form input[type = "number"] {
+    height: 100%;
+    font-size: large;
+}
+
+section form .donation-purpose {
+    margin-top: 30%;
+    height: 80%;
+}
+
+section form .donation-purpose input {
+    width: 100%;
+    font-size: larger;
+}
+
+section form .submit {
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section form .submit input {
+    padding: 2% 6%;
+    font-size: 3em;
+    background-color: black;
+    color: white;
+}
+
+section form .submit input:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 1440px) {
+    .contain {
+        top: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #top {
+        height: 30vh;
+    }
+    
+    header nav ul li a {
+        font-size: 0.8em;
+    }
+
+    header nav ul li {
+        padding: 0px;
+    }
+
+    .nav-wrapper {
+        bottom: 10px;
+    }
+
+    .nav-wrapper a  {
+        width: 0.6rem;
+        height: 0.6rem;
+    }
+
+    section {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    footer .sponsors .other-companies div {
+        width: 5%;
+        height: 50%;
+        margin: 2%;
+    }
+
+    footer .sponsors .company-img img {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    footer .sponsors .social-links div {
+        margin: 2px;
+    }
+
+    footer .sponsors .social-links {
+        float: right;
+    }
+
+    footer .sponsors .social-links div img {
+        height: 18px;
+        width: 18px;
+    }
+
+    footer .bottom {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and  (max-width: 320px), (max-width: 375px), (max-width: 425px)  {
+    #top {
+        height: 20vh;
+    }
+    
+    header nav ul li a {
+        font-size: 0.5em;
+    }
+
+    header nav ul li {
+        padding: 0px;
+    }
+
+    .nav-wrapper {
+        bottom: 10px;
+    }
+
+    .nav-wrapper a  {
+        width: 0.6rem;
+        height: 0.6rem;
+    }
+
+    section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    section h1 {
+        font-size: 2.25em;
+        text-align: center;
+    }
+
+    section form h2 {
+        font-size: 1.25em;
+    }
+
+    section form h3 {
+        margin: 1% auto;
+        font-size: 0.85em;
+        font-weight: lighter;
+    }
+
+    section form .donation-type div {
+        font-size: 0.7em;
+    }
+
+    section form .donation-amount div {
+        grid-template-columns: 31% 31% 31%;
+        grid-template-rows: 2fr 2fr 2fr;
+        grid-column-end: 3;
+        grid-row-end: 3;
+        font-size: 0.7em;
+        text-align: center;
+    }
+
+    section form input[type = "number"] {
+        height: 100%;
+        font-size: 0.7em;
+    }
+
+    section form .submit input {
+        font-size: 0.5em;
+    }
+
+    footer .sponsors .other-companies div {
+        width: 5%;
+        height: 50%;
+        margin: 2%;
+    }
+
+    footer .sponsors .company-img img {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    footer .sponsors .social-links div {
+        margin: 2px;
+    }
+
+    footer .sponsors .social-links div img {
+        height: 18px;
+        width: 18px;
+    }
+
+    footer .bottom {
+        font-size: 0.7em;
+    }
+}

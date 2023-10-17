@@ -1,0 +1,271 @@
+#top{
+    height: 35vh;
+    background-color: rgb(245, 245, 245);
+}
+
+.first{
+    background-color: rgb(241, 220, 211);
+    padding: 5%;
+}
+
+.first p {
+    font-size: xx-large;
+}
+
+.first .shirt-container div {
+    width: 15%;
+    height: fit-content;
+}
+
+.first .shirt-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.first .price {
+    font-size: 400%;
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.second {
+    background-color: rgb(238, 161, 106);
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.second img {
+    width: 150px;
+    height: 200px;
+}
+
+.second p {
+    font-size: xx-large;
+}
+
+.second .left .mug-container,
+.second .left .watch-container,
+.second .right .sweater-container,
+.second .right .skateboards-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.second .price p{
+    text-align: center;
+    font-size: 300%;
+}
+
+.third p{
+    text-align: center;
+    font-size: 300%;
+    font-weight: 900;
+    background-color: rgb(172, 167, 167);
+    padding: 3%;
+}
+
+@media screen and (max-width: 1440px) {
+    .contain {
+        top: 50%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #top {
+        height: 30vh;
+    }
+
+    header nav ul li a {
+        font-size: 0.5em;
+    }
+
+    header nav ul li {
+        padding: 0px;
+    }
+
+    .nav-wrapper {
+        bottom: 10px;
+    }
+
+    .nav-wrapper a  {
+        width: 0.6rem;
+        height: 0.6rem;
+    }
+
+    .second {
+        border: 1px solid red;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+    .second img {
+        width: 125px;
+        height: 125px;
+    }
+    
+    .second p {
+        font-size: xx-large;
+    }
+    
+    .second .left .mug-container,
+    .second .left .watch-container,
+    .second .right .sweater-container,
+    .second .right .skateboards-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+    
+    .second .price p{
+        text-align: center;
+        font-size: 300%;
+    }
+    
+
+    footer .sponsors {
+        display: grid;
+        grid-template-columns: 35% 30% 35%;
+        background-color: rgb(200, 200, 200);
+    }
+    
+    
+    footer .sponsors .other-companies {
+        display: flex;
+        background-color: rgb(230, 230, 230);
+        margin-top: 2%;
+        margin-left: 3%;
+        margin-bottom: 2%;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    footer .sponsors .other-companies div{
+        background-color: black;
+        width: 5%;
+        height: 50%;
+    }
+    
+    footer .sponsors .company-img img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    footer .sponsors .company-img {
+        display: flex;
+        justify-content: space-around;
+        align-items: center ;
+    }
+
+    
+    footer .sponsors .social-links div {
+        margin: 2px;
+    }
+
+    footer .sponsors .social-links {
+        float: right;
+    }
+
+    footer .sponsors .social-links div img {
+        height: 30px;
+        width: 30px;
+    }
+    
+    footer .bottom {
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+    
+    footer .bottom p {
+        display: inline;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 150%;
+    }
+}
+
+@media screen and  (max-width: 320px), (max-width: 375px), (max-width: 425px)  {
+    #top {
+        height: 20vh;
+    }
+
+    header nav ul li a {
+        font-size: 0.5em;
+    }
+
+    header nav ul li {
+        padding: 0px;
+    }
+
+    .nav-wrapper {
+        bottom: 10px;
+    }
+
+    .nav-wrapper a  {
+        width: 0.6rem;
+        height: 0.6rem;
+    }
+
+    .second img {
+        width: 60%;
+        height: 60%;
+    }
+
+    .second {
+        grid-template-columns: 1fr;
+    }
+
+    .second .price,
+    .first .price {
+        font-size: 0.85em;
+        text-align: center;
+
+    }
+
+    .second .left > p,
+    .second .right >p {
+        font-size: 1.5em;
+    }
+
+    .third {
+        font-size: 0.5em;
+    }
+    
+    footer .sponsors .other-companies div {
+        width: 5%;
+        height: 50%;
+        margin: 2%;
+    }
+
+    footer .sponsors .company-img img {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    footer .sponsors .social-links div {
+        margin: 2px;
+    }
+
+    footer .sponsors .social-links {
+        float: right;
+    }
+
+    footer .sponsors .social-links div img {
+        height: 60%;
+        width: 60%;
+    }
+
+    footer .bottom {
+        font-size: 0.7em;
+    }
+}

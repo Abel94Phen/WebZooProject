@@ -1,0 +1,379 @@
+
+#top{
+    height: 35vh;
+    background-color: rgb(245, 245, 245);
+}
+
+#first-name-error,
+#last-name-error,
+#email-error,
+#description-error {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 65%;
+    margin-bottom: 10em;
+    color: rgb(160, 0, 0);
+    width: 100%;
+    text-align: center;
+}
+
+.location {
+    background-color: rgb(225, 225, 225) ;
+    text-align: center;
+    padding: 1%;
+}
+
+.location div {
+    margin: 3%;
+}
+
+.location div h1 {
+    font-weight: 100;
+    font-size: 300%;
+}
+
+.location div p {
+    font-size: 150%;
+}
+
+.contact-form p {
+    font-size: xx-large;
+}
+
+.contact-form form {
+    display: grid;
+    padding: 0 10%;
+    grid-template-columns: 50% 50%;
+    background-color: rgb(160, 160, 160);
+}
+
+.contact-form div {
+    width: 100%;
+}
+
+.contact-form .left {
+    font-size: 2em;
+}
+
+.contact-form .left input, textarea {
+    width: 100%;
+    height: 40px;
+    margin: 1% 0;
+    background-color: rgb(142, 129, 129);
+    color: white;
+    font-size: 1em;
+}
+
+textarea {
+    height: 80px;
+}
+
+
+.contact-form .right input {
+    position: relative;
+    font-size: 1.5em;
+    padding: 5% 7%;
+    left: 35%;
+    top: 45%;
+}
+
+.contact-form form .right input:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+/*
+.contact-form {
+    background-color: rgb(160, 160, 160);
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.contact-form form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 150%;
+}
+
+.contact-form form .left div {
+    margin: 10%;
+}
+
+.contact-form form .left div input,
+.contact-form form .left div textarea {
+    margin-left: 5%;
+    height: 50px;
+    width: 50%;
+    float: right;
+    color: white;
+    background-color: rgb(142, 129, 129);
+}
+
+.contact-form form .left textarea {
+    float:none;
+    width: 80%;
+    height: 15%;
+    background-color: rgb(142, 129, 129);
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+.contact-form form .right {
+    padding-left: 50%;
+    padding-top: 40%;
+}
+
+.contact-form form .right input {
+    padding: 10% 15%;
+    font-size: larger;
+}
+
+.contact-form form .right input:hover {
+    background-color: black;
+    color: white;
+}
+*/
+
+.contacts {
+    height: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contacts .left dl {
+    margin: 3%;
+}
+
+.contacts .left dl dt {
+    font-size: 200%;
+    margin: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.contacts .left dl dd {
+    font-size: 150%;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.contacts .right h1 {
+    font-weight: 100;
+    font-size: 200%;
+}
+
+.contacts .right ul {
+    padding: 10%;
+}
+
+.contacts .right ul li {
+    list-style-type: none;
+    width: 50%;
+}
+
+.contacts .right ul li a {
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+}
+
+.contacts .right ul li:hover {
+    transition: 0.2s ease-in-out;
+    font-size: x-large;
+}
+
+@media screen and (max-width: 1440px) {
+    .contain {
+        top: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #top {
+        height: 30vh;
+    }
+    
+    header nav ul li a {
+        font-size: 0.8em;
+    }
+
+    header nav ul li {
+        padding: 0px;
+    }
+
+    .nav-wrapper {
+        bottom: 10px;
+    }
+
+    .nav-wrapper a  {
+        width: 0.6rem;
+        height: 0.6rem;
+    }
+
+    .location {
+        font-size: 0.75em;
+    }
+
+    .contact-form form .left {
+        margin: 0%;
+    }
+
+
+
+    .contact-form form {
+        font-size: 0.75em;
+    }
+
+    .contact-form form .left div input,
+    .contact-form form .left div textarea {
+        height: 10%;
+        width: 90%;
+        float: none;
+        color: white;
+    }
+
+    .contacts {
+        height: 20%;
+    }
+
+    .contacts dl {
+        font-size: 0.8em;
+    }
+
+    .contacts .right {
+        font-size: 80%;
+    }
+
+    footer .sponsors .other-companies div {
+        width: 5%;
+        height: 50%;
+        margin: 2%;
+    }
+
+    footer .sponsors .company-img img {
+        height: 20px;
+        width: 20px;
+        float: calc(center);
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    footer .sponsors .social-links div {
+        margin: 2px;
+    }
+
+    footer .sponsors .social-links {
+        float: right;
+    }
+
+    footer .sponsors .social-links div img {
+        height: 18px;
+        width: 18px;
+    }
+
+    footer .bottom {
+        font-size: 0.7em;
+    }
+}
+
+
+@media screen and  (max-width: 320px), (max-width: 375px), (max-width: 425px) {
+    #top {
+        height: 20vh;
+    }
+
+    header nav ul li a {
+        font-size: 0.5em;
+    }
+
+    header nav ul li {
+        padding: 0px;
+    }
+
+    .nav-wrapper {
+        bottom: 10px;
+    }
+
+    .nav-wrapper a  {
+        width: 0.6rem;
+        height: 0.6rem;
+    }
+
+    .location {
+        font-size: 0.75em;
+    }
+
+    .contact-form form {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form form .left div {
+        margin: 0;
+        font-size: 0.75em;
+    }
+
+    .contact-form .left label {
+        margin: 5rem 0;
+        font-size: 1.5em;
+    }
+
+    .contact-form form .left div input,
+    .contact-form form .left div textarea {
+        font-size: xx-large;
+        height: 50px;
+        margin: 2%;
+        width: 100%;
+        float: none;
+        color: white;
+    }
+    
+    .contact-form form {
+        text-align: center;
+        height: 70%;
+    }
+
+    .contact-form .right input {
+        left: unset;
+        top: unset;
+    }
+
+
+
+    .contacts {
+        font-size: 0.4em;
+        height: 50%;
+    }
+
+    footer .sponsors .other-companies div {
+        width: 5%;
+        height: 50%;
+        margin: 2%;
+    }
+
+    footer .sponsors .company-img img {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    footer .sponsors .social-links div {
+        margin: 2px;
+    }
+
+    footer .sponsors .social-links {
+        float: right;
+    }
+
+    footer .sponsors .social-links div img {
+        height: 18px;
+        width: 18px;
+    }
+
+    footer .bottom {
+        font-size: 0.7em;
+    }
+}

@@ -1,0 +1,242 @@
+#top{
+    height: 35vh;
+    background-color: rgb(245, 245, 245);
+}
+
+.contain {
+    position: relative;
+}
+
+.first p {
+    margin: 2%;
+}
+
+.first img {
+    height: 380px;
+    width: 200%;
+}
+
+.first div .content_img div h2,
+.first div .content_img div p {
+    font-size: 105%;
+    text-align: justify;
+    
+}
+
+.first div {
+    background-color: rgb(121, 122, 123);
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 19% 19% 19% 19% 19%;
+    padding-left: 2%;
+}
+    /* Parent Container */
+.content_img{
+    position: relative;
+}
+
+/* Child Text Container */
+.content_img div{
+    display: block;
+    position: absolute;
+    background: black;
+    color: white;
+    top: 0;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.content_img:hover{
+    cursor: pointer;
+}
+
+
+.content_img:hover div{
+    width: 96%;
+    height: 100%;
+    visibility: visible;
+    opacity: 0.5;
+}
+
+.content_img:hover div 
+.second {
+    background-color: rgb(189, 132, 132);
+}
+
+.second .clip-container div img {
+    width: 300px;
+    height: 300px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.second .clip-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.second .clip-container img {
+    height: 80%;
+}
+
+.second {
+    padding: 5%;
+}
+
+.second p, .first p{
+    font-size: x-large;
+}
+
+@media screen and (max-width: 1440px) {
+    .contain {
+        top: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #top {
+        height: 30vh;
+    }
+    
+    header nav ul li a {
+        font-size: 0.8em;
+    }
+
+    header nav ul li {
+        padding: 0px;
+    }
+
+    .nav-wrapper {
+        bottom: 10px;
+    }
+
+    .nav-wrapper a  {
+        width: 0.6rem;
+        height: 0.6rem;
+    }
+
+    footer .sponsors .other-companies div {
+        width: 5%;
+        height: 50%;
+        margin: 2%;
+    }
+
+    footer .sponsors .company-img img {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    footer .sponsors .social-links div {
+        margin: 2px;
+    }
+
+    footer .sponsors .social-links {
+        float: right;
+    }
+
+    footer .sponsors .social-links div img {
+        height: 18px;
+        width: 18px;
+    }
+
+    footer .bottom {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and  (max-width: 320px), (max-width: 375px), (max-width: 425px)  {
+    #top {
+        height: 20vh;
+    }
+    
+    header nav ul li a {
+        font-size: 0.5em;
+    }
+
+    header nav ul li {
+        padding: 0px;
+    }
+
+    .nav-wrapper {
+        bottom: 10px;
+    }
+
+    .nav-wrapper a  {
+        width: 0.6rem;
+        height: 0.6rem;
+    }
+
+    .first img,
+    .first div .content_img div {
+        height: 200px;
+        width: 300px;
+    }
+
+    .first div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .first p {
+        text-align: center;
+        font-size: large;
+    }
+
+    .first div .content_img div h2,
+    .first div .content_img div p {
+        margin: 1%;
+        font-size: 70%;
+        text-align: justify;
+    }
+
+    .content_img:hover div{
+        visibility: visible;
+        opacity: 0.5;
+    }
+
+    .second p {
+        text-align: center;
+    }
+
+    .second .clip-container div img {
+        width: 160px;
+        height: 160px;
+    }
+
+    footer .sponsors .other-companies div {
+        width: 5%;
+        height: 50%;
+        margin: 2%;
+    }
+
+    footer .sponsors .company-img img {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    footer .sponsors .social-links div {
+        margin: 2px;
+    }
+
+    footer .sponsors .social-links {
+        float: right;
+    }
+
+    footer .sponsors .social-links div img {
+        height: 18px;
+        width: 18px;
+    }
+
+    footer .bottom {
+        font-size: 0.7em;
+    }
+}

@@ -1,0 +1,197 @@
+.body {
+    display: flex;
+    padding: 5%;
+}
+
+.body div {
+    width: 50%;
+    padding: 10% auto; 
+    margin: 5%;
+    text-align: justify;
+}
+
+.body .lion {
+    padding: 10% 0;
+}
+
+.body div h2 {
+    text-align: center;
+}
+
+.body div p {
+    font-size: larger;
+}
+
+.body div img {
+    width: 100%;
+}
+
+.body div ul {
+    list-style-type: none;
+    font-weight: bold;
+    text-indent: 5%;
+    padding: 5%;
+}
+
+.body .sub-body {
+    margin-top: 15%;
+    font-size: x-large;
+}
+
+.donations {
+    display: flex;
+    background-color: rgb(66, 66, 66);
+    font-size: larger;
+    text-align: justify;
+}
+
+.donations div{
+    margin: 5%; 
+    width: 50%;
+}
+
+.donations div a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    padding: 2% 10%;
+    width: 100px;
+    margin: 25% 25%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1440px) {
+    .contain {
+        top: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header nav ul li a {
+        font-size: 0.6em;
+    }
+
+    header nav ul li {
+        padding: 0px;
+    }
+
+    .nav-wrapper {
+        bottom: 10px;
+    }
+
+    .nav-wrapper a  {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+
+    .body div {
+        margin: 1%;
+        width: 100%;
+    }
+
+
+    .body div p {
+        font-size: 0.85em;
+    };
+
+    footer .sponsors .other-companies div {
+        width: 5%;
+        height: 50%;
+        margin: 2%;
+    }
+
+    footer .sponsors .company-img img {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    footer .sponsors .social-links div {
+        margin: 2px;
+    }
+
+    footer .sponsors .social-links {
+        float: right;
+    }
+
+    footer .sponsors .social-links div img {
+        height: 18px;
+        width: 18px;
+    }
+
+    footer .bottom {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and  (max-width: 320px), (max-width: 375px), (max-width: 425px) {
+    header nav ul li a {
+        font-size: 0.5em;
+    }
+
+    header nav ul li {
+        padding: 0px;
+    }
+
+    .nav-wrapper {
+        bottom: 10px;
+    }
+
+    .nav-wrapper a  {
+        width: 0.6rem;
+        height: 0.6rem;
+    }
+
+    .body, .donations {
+        display: block;
+        padding: 0;
+    }
+    
+    .body div, .donations div {
+        width: 100%;
+        padding: 0%;
+        margin: 0;
+        font-size: small;
+        margin: 3% auto;
+        text-align: justify;
+    }
+
+    .body div img, .donations div img {
+        width: 100%;
+        height: 20%;
+    }
+
+    footer .sponsors .other-companies div {
+        width: 5%;
+        height: 50%;
+        margin: 2%;
+    }
+
+    footer .sponsors .company-img img {
+        height: 20px;
+        width: 20px;
+        float: calc(center);
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    footer .sponsors .social-links div {
+        margin: 2px;
+    }
+
+    footer .sponsors .social-links {
+        float: right;
+    }
+
+    footer .sponsors .social-links div img {
+        height: 18px;
+        width: 18px;
+    }
+
+    footer .bottom {
+        font-size: 0.7em;
+    }
+}

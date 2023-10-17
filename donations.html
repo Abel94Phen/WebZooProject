@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Donations Page</title>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel = "stylesheet" href = "Stylesheets/main.css">
+            <link rel = "stylesheet" href = "Stylesheets/donations-style.css">
+            <script defer src="Scripts/donations.js"></script>
+        </head>
+    </head>
+    <body>
+        <header id = "top">
+            <div class = "contain">
+                <div class = "company-logo">
+                    <img src = "Images\zoo-logo.png" alt = "Company Logo" width = "100%">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href = "index.html">HOME</a></li>
+                        <li><a href = "animals.html">ANIMALS</a></li>
+                        <li><a href = "merch.html">MERCH</a></li>
+                        <li><a href = "contact-us.html">CONTACT US</a></li>
+                        <li><a href = "about.html">ABOUT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section>
+            <h1>MAKE YOUR GIFT</h1>
+            <hr>
+            <p>
+                Every day, our Zoo saves animals and creates lifelong memories that inspire people to conserve the natural 
+                world. Every gift, large or small, helps the zoo build a better community – your community. Thank you for 
+                investing in a more sustainable future for wildlife
+            </p>
+            <form id="form" name="form">
+                <h2>DONATION DETAILS</h2>
+                
+                <div class="donation-type">
+                    <h3>DONATION TYPE</h3>
+                    <span id="donation-type-error"></span>
+                        <div>
+                            <label><input type="radio" name="type" value="recurring"><span>RECURRING</span></label>
+                            <label><input type="radio" name="type" value="one-time"><span>ONE - TIME</span></label>
+                        </div>
+                </div>
+
+                <div class="donation-amount">
+                    <h3>DONATION AMOUNT</h3>
+                    <span id="donation-amount-error"></span><br>
+                    <div>
+                        <label><input type="radio" name="amount" value="100"><span>100</span></label>
+                        <label><input type="radio" name="amount" value="200"><span>200</span></label>
+                        <label><input type="radio" name="amount" value="400"><span>400</span></label>
+                        <label><input type="radio" name="amount" value="500"><span>500</span></label>
+                        <label><input type="radio" name="amount" value="1000"><span>1000</span></label>
+                        <label><input type="radio" name="amount" value="2000"><span>2000</span></label>
+                        <label><input type="radio" name="amount" value="5000"><span>5000</span></label>
+                        <label><input type="radio" name="amount" value="10000"><span>10000</span></label>
+                        <label><input type="radio" name="amount" value="OTHER"><span>OTHER</span></label>
+                    </div>
+                </div>
+                
+                <div class="donation-purpose">
+                    <h3>DESIGNATION</h3>
+                    <span id="donation-purpose-error"></span><br>
+                    <input id="purpose" type="text" list="designation" name="designation" placeholder="GREATEST AREA OF NEED">
+                    <datalist id = "designation">
+                        <option value="FOOD"></option>
+                        <option value="RESEARCH"></option>
+                        <option value="SHELTER"></option>
+                    </datalist>
+                    
+                    <h3>Email</h3>
+                    <span id="email_error"></span><br>
+                    <input id="email" type = "email" name = "email">
+                </div>
+
+                <div class="submit">
+                    <input type = "submit">
+                </div>
+            </form>
+        </section>
+
+        <footer>
+            <div class = "sponsors">
+                
+                <div class = "other-companies">
+                    <p>Partners</p>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class = "company-img">
+                    <img src = "Images/zoo-logo.png">
+                </div>
+                <div class = "social-links">
+                    <div><a href = "https://www.instagram.com" target = "_blank"><img src = "Images/instagram-icon.png" ></a></div>
+                    <div><a href = "https://www.facebook.com" target = "_blank"><img src = "Images/facebook-icon.png" ></a></div>
+                    <div><a href = "https://www.youtube.com" target = "_blank"><img src = "Images/youtube-icon.png"></a></div>
+                    <div><a href = "https://www.gmail.com" target = "_blank"><img src = "Images/gmail-icon.png"></a></div>
+                    <div><a href = "https://www.linkedin.com" target = "_blank"><img src = "Images/linkedin-icon.png"></a></div>
+                </div>
+            </div>
+
+            <div class = "bottom">
+                <p>&copy;</p>
+                <p>ZOO Company</p>
+            </div>
+        </footer>
+
+    </body>
+</html>
